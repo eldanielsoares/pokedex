@@ -49,7 +49,6 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
     Registry.ListPokemonUseCase
   );
   const pokemons = await useCase.execute();
-  // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png
 
   return {
     props: {
